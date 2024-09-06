@@ -6,14 +6,7 @@ Este proyecto utiliza **BeautifulSoup** para realizar scraping de datos de las s
 
 ## Páginas Web
 
-1. **LinkedIn**
-   - **URL**: [https://www.linkedin.com/feed/](https://www.linkedin.com/feed/)
-   - **Descripción**: LinkedIn es una red social profesional. Ten en cuenta que LinkedIn tiene políticas estrictas contra el scraping, y el uso de su API oficial es recomendado para obtener datos de manera legal.
-
-2. **Universia**
-   - **URL**: [https://www.universia.es](https://www.universia.es)
-   - **Descripción**: Universia es un portal que proporciona información sobre universidades y programas educativos en España y América Latina.
-
+https://eviatienda.com/
 ## Requisitos
 
 Para ejecutar el script de scraping, asegúrate de tener instalados los siguientes paquetes de Python:
