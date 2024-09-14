@@ -1,12 +1,12 @@
 from bs4 import BeautifulSoup
 import requests
 
-url = 'https://www.linkedin.com/feed/'
+url = 'https://eviatienda.com/'
 seObtiene = requests.get(url)
 html_doc = seObtiene.text
 
 soup = BeautifulSoup(html_doc,'html.parser')
-
+print(soup.prettify())
 #titulo = soup.findAll('img')
 #print(titulo)
 
