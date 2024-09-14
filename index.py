@@ -1,14 +1,15 @@
 from bs4 import BeautifulSoup
 import requests
 
-url = 'https://eviatienda.com/'
+
+#url = 'https://eviatienda.com/'
+url = 'https://www.revesderecho.com/'
+
 seObtiene = requests.get(url)
 html_doc = seObtiene.text
 
 soup = BeautifulSoup(html_doc,'html.parser')
-print(soup.prettify())
-#titulo = soup.findAll('img')
-#print(titulo)
+
 
 #print(soup.prettify())
 
@@ -24,8 +25,8 @@ print(soup.prettify())
 
 #print(soup.p)
 
-#for i in soup.find_all('img'):
-#    print(i.get('alt'))
+for i in soup.find_all('a'):
+   print(i.get('href'))
 
 #print(soup.find("form"))
 
@@ -33,16 +34,3 @@ print(soup.prettify())
 
 #print(soup.get_text())
 
-link = soup.a
-for parent in link.parents:
-    if parent is None:
-        print(parent)
-    else:
-        print(parent.name)
-
-imgenes = soup.img
-for parent in imgenes:
-    if parent is None:
-        print(parent)
-    else:
-        print(parent)
